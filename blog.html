@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+
+</head>
+
+<body>
+
+    <div>
+        <h1>1.Map | Filter | ForEach | Find Different</h1>
+
+        <fieldset style="width: 50%;">
+            <ol type="1">
+                <li>
+                    Map --> Transform each item in an array and output to a new array without altering the original
+                    array.
+                    <b< /li>
+                <li>
+                    Filter --> remove items of an array based on some criteria without altering the original array.
+                </li>
+                <li>
+                    forEach --> perform some function on each item of an array. </li>
+                <li>
+                    find --> locates a specific entry by a predicate and returns it.
+                </li>
+            </ol>
+        </fieldset>
+        <h1>2. Local Storage and Session stronge Different</h1>
+        <div>
+            <fieldset style="width: 50%;">
+                <p>
+                    <b>Local storage</b> maintains data across all instances of a site, whether they're in different
+                    tabs or windows. It is also permanent, so the data won't disappear when you close your browser.
+
+                    When you open a website that previously used local storage, it will always have access to that
+                    stored data.
+                </p>
+            </fieldset>
+            <br>
+            <fieldset style="width: 50%;">
+                <p><b>SessionStorage</b> is cleared when the page session ends. A page session lasts as long as the tab
+                    or the browser is open. Therefore, when you open a new tab or a new window, this creates a new
+                    session and new storage.
+                </p>
+            </fieldset>
+        </div>
+        <h1>3. What is Event Loop and working process</h1>
+        <fieldset style="width: 50%;">
+            <p>
+                The event loop is the secret behind JavaScript's asynchronous programming. JS executes all operations on
+                a single thread, but using a few smart data structures, it gives us the illusion of multi-threading.
+            </p>
+
+            <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack
+                is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack,
+                which effectively runs it. Such an iteration is called a tick in the Event Loop.
+            </p>
+        </fieldset>
+
+        <h1>4. Quiz Time Function Working process</h1>
+        <fieldset style="width: 50%;">
+            <p>
+                This code defines a function called quizTimer that takes in one parameter called dismiss.
+
+                Inside the function, there is an if statement that checks if the value of dismiss is truthy (meaning
+                it's
+                not false, null, undefined, 0, NaN, or an empty string). If dismiss is truthy, the function calls
+                clearInterval(timer) to stop the interval timer and then immediately returns, which means the rest of
+                the
+                function won't be executed.
+            </p>
+        </fieldset>
+        <h1>5. Choose Time Function Working process</h1>
+
+        <fieldset style="width: 50%;">
+            <p>
+                This code defines a function called chooseQuiz that takes in two parameters: index and givenAns.
+
+                Inside the function, there is a variable called isExist that uses the find method to search through an
+                array called answers. The find method takes in a function as an argument and returns the first element
+                in the array that matches the condition specified in the function. In this case, the function checks if
+                the id property of the element in answers is equal to the id property of the quiz data located at the
+                given index in an array called quizData.
+
+            </p>
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
